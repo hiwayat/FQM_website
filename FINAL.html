@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="main.css">
+
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="menu-desktop">
+<ul class="main-menu">
+    <li><a href="FINAL.html"><b>FQM</b> SPORTS</a></li>
+    <!-- Float links to the right. Hide them on small screens -->
+
+      <li><a href="men.html">Men</a></li>
+      <li><a href="women.html">Women</a></li>
+      <li><a href="kids.html">Kids</a></li>
+	  <li><a href="accessories.html">Accessories</a></li>
+	  <li><a href="brands.html">Brands</a></li>
+	  <li><a href="exercise_wellness.html">Exercise and Wellness</a></li>
+      <li><a href="drinkware.html">Water Bottel</a></li>
+	  <li><a href="new_arrival.html">New Arrival</a></li>
+	  <li><a href="sale.html">Sale</a></li>
+          <li>
+          <a href="#">information</a>
+          <ul class="sub-menu">
+      <li><a href="preorder.html">Preorder</a></li>
+      <li><a href="contact.html">Contact</a></li>
+            </ul>
+      </li>
+         <li>
+          <a href="#">More</a>
+          <ul class="sub-menu">
+      <li><a href="about.html">About</a></li>
+      <li><a href="Event.html" >Event</a></li>
+	  <li><a href="faq.html">FAQ</a></li>
+                  </ul>
+      </li>
+      </ul>
+     
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1300px;" id="home">
+  <div id="box2">
+		<div id="sliding"><!-- box2 start -->
+    	 <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="img/Colorful Gradient Modern Brainstorm Whiteboard Business Presentation .jpg" id="picture" width="100%" >
+              <div class="text3">FQM Malaysia</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="img/Black and Orange Graphic Dynamic Sports Football Flyer.jpg"id="picture" width="100%">
+              <div class="text3">Promotion</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img/White and Orange Bold Vibrant Football Match Day Banner.jpg" id="picture" width="100%">
+              <div class="text3">Football Event</div>
+            </div>
+            
+	 		</div>
+             <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+           
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 5 seconds
+            }
+            </script>
+</header>
+	
+ <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about" style="text-align:center">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>FQM sports is one of Malaysia’s sports retailer which is primarily involved in the retail of sports footwear, apparel and equipment. FQM sports has been established in 2020 and ever since then they have become one of the largest sports retailer in the industry. The name of FQM sports came from the owner of this company which consists of 3 owners whose names are fatin, qis and mija. They have been friends since they were in their teens. Their friendship and passions for sports brought them together to build this sportswear company. FQM sports now has over 300 stores within and across the country with a strong presence in Malaysia.
+    </p>
+  </div>
+
+<!-- Page content -->
+<div cla                                                            ss="w3-content w3-padding" style="max-width:1564px">
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch for further informations.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i>SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by FQM SPORTS</p>
+</footer>
+</div>
+</body>
+</html>
+
